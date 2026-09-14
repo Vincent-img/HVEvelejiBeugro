@@ -1,0 +1,20 @@
+html{
+    max-width: 1200px;
+    background-image: linear-gradient(45,rgb(0 0 0), rgb(180 12 12));
+}
+main{
+    background-image: linear-gradient(45,rgb(0 0 0), rgb(180 12 12));
+}
+header{
+    background-color: rgb(180 12 12);
+    color: rgb(217 217 217);
+}
+a{
+    text-decoration: none;
+    background-color: rgb(217 217 217);
+    color: rgb(180 12 12);
+}
+section,div,h1{
+    background-color: rgb(180 12 12);
+    color: rgb(217 217 217);
+}
