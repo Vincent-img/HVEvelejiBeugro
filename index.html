@@ -4,240 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólió</title>
+    <title>Portfólió - Trág Jenő</title>
+    <!-- Google Fonts betűtípus a pluszpontért -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- FEJLÉC ÉS NAVIGÁCIÓ -->
     <header>
-
-
-
-
-
-        <main>
-            <div>
-                <h1>Trág Jenő</h1>
-                <h1>JUNiOR FEJLESZTŐ</h1>
-                <h2>“A lehetetlenre is van megoldás, csak meg kell fizetni a felárat.”</h2>
-            </div>
-            <nav>
-                <a href="#bemutatkozas">bemutatkozás</a>
-                <a href="#keszsegek">készségek</a>
-                <a href="#projektek">projektek</a>
-                <a href="#kapcsolat">kapcsolat</a>
-            </nav>
-    </header>
-    <section>
-        <div>
-            <h1 id="bemutatkozas" class="hatter">Bemutatkozás</h1>
+        <div class="header-box">
+            <h1>Trág Jenő</h1>
+            <h2>JUNIOR FEJLESZTŐ</h2>
+            <p class="motto">“A lehetetlenre is van megoldás, csak meg kell fizetni a felárat.”</p>
         </div>
+        <nav>
+            <a href="#bemutatkozas">bemutatkozás</a>
+            <a href="#keszsegek">készségek</a>
+            <a href="#projektek">projektek</a>
+            <a href="#kapcsolat">kapcsolat</a>
+        </nav>
+    </header>
 
-        <div class="container">
-            <div>
-                <img src="img/jeno.png" alt="" class="hatter">
-            </div>
-
-            <div>
-                <p class="hatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit neque, molestie at
+    <main>
+        <!-- BEMUTATKOZÁS SZEKCIÓ -->
+        <section id="bemutatkozas">
+            <h2 class="section-title">Bemutatkozás</h2>
+            <div class="container bemutatkozas-container">
+                <div class="card img-card">
+                    <img src="img/jeno.png" alt="Trág Jenő portréja">
+                </div>
+                <div class="card text-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit neque, molestie at
                     lobortis sed, condimentum congue odio. Nullam aliquet luctus volutpat. Ut efficitur massa a nunc
                     consequat, at mattis velit sodales. Aenean lacus metus, consectetur vel eleifend quis, laoreet ac
                     nunc. Nam scelerisque porta eros, id eleifend magna ornare et. Maecenas sed mauris consequat,
                     iaculis risus id, iaculis sem. Aliquam nisi arcu, malesuada eu tortor a, placerat consectetur magna.
                     Maecenas et convallis quam. Ut id volutpat quam, ut sodales mauris. Phasellus et rhoncus tortor, at
-                    lacinia dolor.
-                    Sed pretium magna eget nisl vulputate aliquet. Aenean vitae vulputate purus. In eleifend sapien eu
+                    lacinia dolor.</p>
+                    <p>Sed pretium magna eget nisl vulputate aliquet. Aenean vitae vulputate purus. In eleifend sapien eu
                     augue mattis, id ullamcorper quam volutpat. Morbi nec gravida magna, ut aliquet felis. Aenean lacus
                     dui, placerat nec mollis a, dignissim at purus. Duis eu augue at dolor aliquet placerat. Aliquam
-                    erat volutpat. Vivamus quis risus vel augue tincidunt pretium a at magna.
-                    Nulla eu libero semper tortor aliquet accumsan. Sed quis varius erat, vel finibus lacus. Nullam a
-                    nisl vitae sem tempus ornare nec id est. Vestibulum eget tellus mauris. Vivamus quis nisl leo.
-                    Maecenas ut enim blandit, vehicula elit quis, interdum massa. Nulla blandit, mi et accumsan semper,
-                    sapien ligula consectetur metus, vitae egestas ante quam nec sem. Etiam metus purus, bibendum eu
-                    ipsum imperdiet, semper fringilla libero.</p>
+                    erat volutpat. Vivamus quis risus vel augue tincidunt pretium a at magna.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="formazas">
-            <div>
-                <h1 id="keszsegek" class="hatter">Készségek</h1>
+        <!-- KÉSZSÉGEK SZEKCIÓ -->
+        <section id="keszsegek">
+            <h2 class="section-title">Készségek</h2>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <img src="img/c.png" alt="C# ikon">
+                    <p>C# programozás</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/htmlcssjs.png" alt="HTML CSS JS ikon">
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/iot.png" alt="IoT ikon">
+                    <p>IoT eszközök</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/python.webp" alt="Python ikon">
+                    <p>Python programozás</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/sql.png" alt="SQL ikon">
+                    <p>Adatbázis kezelés</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/mkoontroller.png" alt="Hardver ikon">
+                    <p>Hardver & Forrasztás</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/monster.webp" alt="Bugfix ikon">
+                    <p>Kreatív Bugfix</p>
+                </div>
+                <div class="card skill-card">
+                    <img src="img/jeno2.png" alt="Ezer mester ikon">
+                    <p>Ezer mester</p>
+                </div>
             </div>
 
-            <div class="container2">
-                <img src="img/c.png" alt="" class="hatter">
-                <p class="hatter">
-                    C# programozás
-                </p>
+            <!-- Készségek részletes leírása -->
+            <div class="card skills-description">
+                <p><strong>C# programozás:</strong> Asztali alkalmazások, logikai feladatok és az alapvető szoftverfejlesztési rutinhoz szükséges objektumorientált kódolás.</p>
+                <p><strong>HTML, CSS, JS:</strong> Modern, reszponzív weboldalak és felhasználói felületek tervezése, megvalósítása és interaktívvá tétele.</p>
+                <p><strong>IoT eszközök:</strong> Okoskütyük, mikrokontrollerek és vezeték nélküli modulok programozása a fizikai világ és a szoftverek összekötésére.</p>
+                <p><strong>Python programozás:</strong> Gyors szkriptekírás, adatfeldolgozás, automatizálás és backend logikák fejlesztése tiszta kóddal.</p>
+                <p><strong>Adatbázis kezelés:</strong> Adatok hatékony tárolása, lekérdezések írása, relációs adatbázisok tervezése és karbantartása SQL-ben.</p>
+                <p><strong>Hardver & Forrasztás:</strong> Egyedi gépek építése, alkatrészek cseréje, áramkörök bütykölése és fizikai hardveres hibaelhárítás.</p>
+                <p><strong>Kreatív Bugfix:</strong> Az a pillanat, amikor a kód nem fut, de egy doboz energiaital és némi improvizáció csodákra képes.</p>
+                <p><strong>Ezer mester:</strong> Mindenhol otthon vagyok, ahol csavarhúzó, forrasztópáka vagy egy gyanús hibaüzenet van a horizonton.</p>
             </div>
-            <div class="container2">
-                <img src="img/htmlcssjs.png" alt="" class="hatter">
-                <p class="hatter">
-                    HTML,CSS, JS
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/iot.png" alt="" class="hatter">
-                <p class="hatter">
-                    IOT eszközök
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/python.webp" alt="" class="hatter">
-                <p class="hatter">
-                    Python programozás
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/sql.png" alt="" class="hatter">
-                <p class="hatter">
-                    Adatbázis kezelés
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/mkoontroller.png" alt="" class="hatter">
-                <p class="hatter">
-                    Hardver & Forrasztás
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/monster.webp" alt="" class="hatter">
-                <p class="hatter">
-                    Kreatív Bugfix
-                </p>
-            </div>
-            <div class="container2">
-                <img src="img/jeno2.png" alt="" class="hatter">
-                <p class="hatter">
-                    Ezer mester
-                </p>
-            </div>
-        </div>
+        </section>
 
+        <!-- PROJEKTEK SZEKCIÓ -->
+        <section id="projektek">
+            <h2 class="section-title">Projektek</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <img src="img/logoo.png" alt="HVMTBG logója">
+                    <h3>HVMT BG Kft. weblap fejlesztése</h3>
+                    <p>A családi vállalkozásunk, a HVMT Bács Glass Kft. számára készülő weboldal, amely bemutatja a szigetelt üveg gyártási folyamatait, termékeinket és elérhetőségeinket.</p>
+                </div>
+
+                <div class="card project-card">
+                    <img src="img/tata.png" alt="Tatai albérlet">
+                    <h3>Tatai albérlet kiadása</h3>
+                    <p>Tatai ingatlanok kiadásához készült webes projekt, amely részletesen bemutatja a lakások paramétereit, helyiségeit és a bérlés feltételeit.</p>
+                </div>
+
+                <div class="card project-card">
+                    <img src="img/szem.png" alt="Távolba tekintő verseny">
+                    <h3>Beltéri távolba tekintő verseny</h3>
+                    <p>A beltéri távolba tekintő verseny online regisztrációs és eredményrögzítő webes felületének elkészítése a bátor indulók számára.</p>
+                </div>
+
+                <div class="card project-card">
+                    <img src="img/dron.png" alt="Logisztikai drón">
+                    <h3>Autonóm Logisztikai Drónrendszer</h3>
+                    <p>Nagy hatótávolságú, önjáró logisztikai drónrendszer fejlesztése, amely hatékonyan kézbesíti a csomagokat a célállomásra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- KAPCSOLAT SZEKCIÓ -->
+        <section id="kapcsolat">
+            <h2 class="section-title">Kapcsolat</h2>
+            <div class="card contact-card">
+                <p><strong>Email:</strong> TragJeno@citromail.hu</p>
+                <p><strong>Telefon:</strong> +36 20 013 6769</p>
+                <p><strong>Lakhely:</strong> 6500 Baja, Piac tér, Szenes u.</p>
+            </div>
+        </section>
         <div>
-            <p class="hatter">
-                C# programozás: Asztali alkalmazások, logikai feladatok és az alapvető szoftverfejlesztési rutinhoz
-                szükséges objektumorientált kódolás. <br>
-                HTML, CSS, JS: Modern, reszponzív weboldalak és felhasználói felületek tervezése, megvalósítása és
-                interaktívvá tétele. <br>
-                IOT eszközök: Okoskütyük, mikrokontrollerek és vezeték nélküli modulok programozása a fizikai világ és a
-                szoftverek összekötésére. <br>
-                Python programozás: Gyors szkriptekírás, adatfeldolgozás, automatizálás és backend logikák fejlesztése
-                tiszta kóddal. <br>
-                Adatbázis kezelés: Adatok hatékony tárolása, lekérdezések írása, relációs adatbázisok tervezése és
-                karbantartása SQL-ben. <br>
-                Hardver & Forrasztás: Egyedi gépek építése, alkatrészek cseréje, áramkörök bütykölése és fizikai
-                hardveres hibaelhárítás. <br>
-                Kreatív Bugfix: Az a pillanat, amikor a kód nem fut, de egy doboz energiaital és némi improvizáció
-                csodákra képes. <br>
-                Ezer mester: Mindenhol otthon vagyok, ahol csavarhúzó, forrasztópáka vagy egy gyanús hibaüzenet van a
-                horizonton.
-            </p>
+            <input type="text" id="emailInput" placeholder="Írd be az email címed">
+            <input type="password" id="passwordInput" placeholder="Írd be a jelszavad">
+            <input type="text" id="passwordInput2" placeholder="Írd be a jelszavad újra">
+            <button id="loginButton">Bejelentkezés</button>
         </div>
-    </section>
-
-    <section>
-        <div>
-            <h1 id="projektek" class="hatter">Projektek</h1>
-        </div>
-
-        <div class="box">
-            <div class="kep">
-                <img src="img/logoo.png" alt="HVMTBG logója" class="hatter">
-            </div>
-            <div class="cim">
-                <h2 class="hatter">HVMT BG Kft. weblap fejlesztése</h2>
-            </div>
-            <div class="szoveg">
-                <p class="hatter">
-                    A családi vállalkozásunk, a HVMT Bács Glass Kft. számára készülő weboldal, amely bemutatja a
-                    szigetelt üveg gyártási folyamatait, termékeinket és elérhetőségeinket. A projekt célja egy modern,
-                    átlátható és reszponzív felület biztosítása a partnerek és ügyfelek számára, letisztult vállalati
-                    arculattal.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="kep">
-                <img src="img/tata.png" alt="" class="hatter">
-            </div>
-            <div class="cim">
-                <h2 class="hatter">tatai albérlet kiadása</h2>
-            </div>
-            <div class="szoveg">
-                <p class="hatter">
-                    Tatai ingatlanok kiadásához készült webes projekt, amely részletesen bemutatja a lakások
-                    paramétereit, helyiségeit és a bérlés feltételeit. Az oldal galériával, elhelyezkedési
-                    információkkal és közvetlen kapcsolati lehetőséggel segíti a leendő bérlőket a tájékozódásban.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="kep">
-                <img src="img/szem.png" alt="" class="hatter">
-            </div>
-            <div class="cim">
-                <h2 class="hatter">Beltéri távolba tekintő verseny </h2>
-            </div>
-            <div class="szoveg">
-                <p class="hatter">
-                    A beltéri távolba tekintő verseny online regisztrációs és eredményrögzítő webes felületének
-                    elkészítése. A projekt célja, hogy strukturált formában gyűjtse össze a bátor indulókat, akik szűk
-                    irodai vagy szobai környezetben próbálnak rekordokat dönteni a szemközti téglafalig. A rendszer
-                    kezeli a nevezéseket, a megadott távolságok statisztikáit is. Modern, reszponzív dizájnnal készült,
-                    hogy mobilon és asztali gépen is zökkenőmentesen menjen a jelentkezés.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="kep">
-                <img src="img/dron.png" alt="" class="hatter">
-            </div>
-            <div class="cim">
-                <h2 class="hatter">Autonóm Logisztikai Drónrendszer kiépítése</h2>
-            </div>
-            <div class="szoveg">
-                <p class="hatter">
-                    Nagy hatótávolságú, önjáró logisztikai drónrendszer fejlesztése, amely hatékonyan és a szokásosnál
-                    is közvetlenebb módon kézbesíti a csomagokat a célállomásra. A szoftver valós idejű telemetriai
-                    adatokkal, útvonaltervezéssel és nagy pontosságú célra tartási algoritmussal optimalizálja a
-                    kiszállítást – visszaküldési lehetőség nélkül.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <h1 id="kapcsolat" class="hatter">Kapcsolat</h1>
-        </div>
-
-        <div class="hatter">
-            <p>Email: TragJeno@citromail.hu <br>
-                Telefon: +36 20 013 6769 <br>
-                Lakhely: 6500 Baja, Piac tér, Szenes u.,
-            </p>
-        </div>
-    </section>
     </main>
 
 
 
-
-
+    <!-- LÁBLÉC -->
     <footer>
-        <p class="hatter">© 2026 Horváth Vencel
-            Szoftverfejlesztő és tesztelő</p>
+        <p>© 2026 Horváth Vencel</p>
+        <p>Szoftverfejlesztő és tesztelő</p>
     </footer>
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,73 +1,248 @@
-html{
+/* ALAPBEÁLLÍTÁSOK ÉS TIPOGRÁFIA */
+html {
     scroll-behavior: smooth;
-    margin-left: auto;
-    margin-right: auto;
 }
-body{
 
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(180, 12, 12, 0.85) 100%);
-    text-align: center;
-    scroll-behavior: smooth;
-    max-width: 1200px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a0303 50%, #4a0505 100%);
+    background-attachment: fixed;
+    color: #d9d9d9;
+    line-height: 1.6;
 }
-header{
-    background-color: rgb(180 12 12);
-    color: rgb(217 217 217);
+
+main {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ÁLTALÁNOS CÍMSOROK ÉS KÁRTYÁK */
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+.section-title {
+    background-color: #b40c0c;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 40px auto 25px auto;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Kártya stílus a mintakép alapján */
+.card {
+    background-color: #8c0909;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    border: 1px solid #a80d0d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* FEJLÉC ÉS NAVIGÁCIÓ */
+header {
+    max-width: 1200px;
+    margin: 20px auto;
     text-align: center;
 }
-a{
+
+.header-box {
+    background-color: #8c0909;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-box h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.header-box h2 {
+    font-size: 1.4rem;
+    color: #ffcccc;
+}
+
+.motto {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
     text-decoration: none;
-    background-color: rgb(217 217 217);
-    color: rgb(180 12 12);
+    background-color: #d9d9d9;
+    color: #8c0909;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-a:hover{
-    background-color: rgb(180 12 12);
-    color: rgb(217 217 217);
+
+nav a:hover {
+    background-color: #8c0909;
+    color: #ffffff;
+    border: 1px solid #d9d9d9;
 }
-section,div,h1{
-   
-    color: rgb(217 217 217);
+
+/* BEMUTATKOZÁS SZEKCIÓ */
+.bemutatkozas-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
-.hatter{
-    background-color: rgb(180 12 12);
-    border-radius: 26px;
-    padding-inline-start: 20px;
+
+.img-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+.text-card {
+    flex: 2;
+    text-align: justify;
+}
+
+/* KÉSZSÉGEK SZEKCIÓ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.skill-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skills-description {
+    text-align: left;
+}
+
+.skills-description p {
+    margin-bottom: 8px;
+}
+
+/* PROJEKTEK SZEKCIÓ */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* KAPCSOLAT SZEKCIÓ */
+.contact-card {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* LÁBLÉC */
+footer {
+    background-color: #8c0909;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
-    color: rgb(217 217 217);
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
-.hatter,img{
-    width: 300px;
-    
+
+footer p {
+    margin: 5px 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  gap: 20px;
-  margin-left: auto;
-    margin-right: auto;
+/* RESZPONZÍV BEÁLLÍTÁSOK (800px alatti képernyőkhöz) */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+    .bemutatkozas-container {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        width: 90%;
+    }
 }
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: stretch;
-  gap: 20px;
-  margin-left: auto;
-    margin-right: auto;
-  flex-direction: column;
+
+@media (max-width: 500px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-
-
-
